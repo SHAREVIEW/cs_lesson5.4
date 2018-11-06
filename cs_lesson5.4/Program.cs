@@ -10,6 +10,18 @@ namespace cs_lesson5._4
     {
         static void Main(string[] args)
         {
+            string myString = "This is a test.";
+            char[] separator = { ' ' }; //split by blank places
+            string[] myWords;
+            myWords = myString.Split(separator);
+            
+            foreach (string word in myWords)
+            {
+                Console.WriteLine("{0}", word);
+            }
+            Console.ReadKey();
+            
+
         }
     }
 }
